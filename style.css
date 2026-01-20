@@ -862,3 +862,30 @@ header {
   }
 }
 
+/* =====================================================
+   CONTACT – MOBILE VERTICAL STACK
+===================================================== */
+@media (max-width: 768px) {
+  .contact-horizontal {
+    flex-direction: column;   /* stack items vertically */
+    align-items: center;      /* center them */
+    gap: 40px;                /* space between items */
+    overflow-x: visible;      /* remove horizontal scroll */
+    text-align: center;
+  }
+
+  .contact-item {
+    flex: 0 0 auto;           /* reset fixed width */
+    width: 100%;              /* full width */
+  }
+
+  .contact-item h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-item p,
+  .contact-item a {
+    font-size: 1rem;
+  }
+}
+
